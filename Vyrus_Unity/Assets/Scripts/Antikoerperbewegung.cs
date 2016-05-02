@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Antikörperbewegung : MonoBehaviour {
+public class Antikoerperbewegung : MonoBehaviour {
 
 	GameObject Virus; //Virus
 	Vector3 direction; //Vektor von Antikörper zu Virus
