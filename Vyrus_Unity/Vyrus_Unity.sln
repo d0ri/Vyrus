@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{0F83946E-0EEF-E014-8E80-947532D066BE}") = "Vyrus_Unity", "Assembly-CSharp.csproj", "{533D1C2A-4802-57C0-8F37-260445590F74}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vyrus_Unity.CSharp", "Vyrus_Unity.CSharp.csproj", "{12577DAB-4EBC-9B72-D1DF-8715703A0C9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{533D1C2A-4802-57C0-8F37-260445590F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{533D1C2A-4802-57C0-8F37-260445590F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{533D1C2A-4802-57C0-8F37-260445590F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{533D1C2A-4802-57C0-8F37-260445590F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12577DAB-4EBC-9B72-D1DF-8715703A0C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12577DAB-4EBC-9B72-D1DF-8715703A0C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12577DAB-4EBC-9B72-D1DF-8715703A0C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12577DAB-4EBC-9B72-D1DF-8715703A0C9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
