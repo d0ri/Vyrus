@@ -11,7 +11,7 @@ public class VirusBewegung : MonoBehaviour {
 			float h = Input.GetAxis ("Horizontal");
 			float v = Input.GetAxis ("Vertical");
 			
-			transform.Translate (new Vector3 (h, 0, v) * Time.deltaTime * moveSpeed);
+		transform.Translate (new Vector3 (h, 0, v).normalized * Time.deltaTime * moveSpeed, Space.World); //Bugfix: Space.World ergänzt, Vektor normalisiert
 			
 		}
 		
