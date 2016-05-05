@@ -23,7 +23,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 		timer = duration; // für Vektorberechnung bei Start
 
 		//ZUFALLSFARBE!
-		GetComponent<Renderer> ().material.color = new Color (Random.value, Random.value, Random.value);
+		GetComponent<Renderer> ().material.color = Virus.GetComponent<Renderer>().material.color;
 		//TEST!
 	}
 
@@ -46,7 +46,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 			timer = 0; //setzt Timer zurück
 		}
 
-		if (rgbo <= 2f){
+		if (rgbo <= 2f || direction.magnitude >= 20f ){
 			GetComponent<Rigidbody>().AddForce(erratic.normalized*baseSpeed, ForceMode.VelocityChange); //für großen Unterschied
 		}
 			else {
