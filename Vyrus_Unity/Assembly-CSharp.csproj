@@ -45,10 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Farbe1aus6.cs" />
+     <Compile Include="Assets\SchrumpfenueberZeit.cs" />
      <Compile Include="Assets\Scripts\Antikoerperbewegung.cs" />
      <Compile Include="Assets\Scripts\Gegnerbewegung.cs" />
      <Compile Include="Assets\Scripts\KameraFolgen.cs" />
      <Compile Include="Assets\Scripts\VirusBewegung.cs" />
+     <Compile Include="Assets\Zellen.cs" />
+     <Compile Include="Assets\zellenfressen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
