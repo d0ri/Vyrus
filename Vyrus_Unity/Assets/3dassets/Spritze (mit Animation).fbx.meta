@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: a1128e30c264e9a4dbd1b9a0455fbab5
+timeCreated: 1462733551
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ambientLight1
+    100002: AntikoerperMaterial__DUMMY___werden_eingespritzt_
+    100004: Bindeglied__vorne_
+    100006: Endstueck
+    100008: Kolben
+    100010: Kolben1
+    100012: Kolben__ganz_
+    100014: Kolbenende
+    100016: Kolbenfront
+    100018: Mittelstueck
+    100020: Mittelstueck1
+    100022: Mittelstueck2
+    100024: Mittelstueck3
+    100026: pCylinder1
+    100028: pTorus1
+    100030: Spitze
+    100032: Spitze1
+    100034: Spitze2
+    100036: //RootNode
+    100038: Spritze__ganz_
+    100040: transform1
+    100042: transform10
+    100044: transform11
+    100046: transform12
+    100048: transform13
+    100050: transform14
+    100052: transform15
+    100054: transform16
+    100056: transform17
+    100058: transform2
+    100060: transform3
+    100062: transform4
+    100064: transform6
+    100066: transform7
+    100068: transform8
+    100070: transform9
+    100072: Verengung__vorne_
+    400000: ambientLight1
+    400002: AntikoerperMaterial__DUMMY___werden_eingespritzt_
+    400004: Bindeglied__vorne_
+    400006: Endstueck
+    400008: Kolben
+    400010: Kolben1
+    400012: Kolben__ganz_
+    400014: Kolbenende
+    400016: Kolbenfront
+    400018: Mittelstueck
+    400020: Mittelstueck1
+    400022: Mittelstueck2
+    400024: Mittelstueck3
+    400026: pCylinder1
+    400028: pTorus1
+    400030: Spitze
+    400032: Spitze1
+    400034: Spitze2
+    400036: //RootNode
+    400038: Spritze__ganz_
+    400040: transform1
+    400042: transform10
+    400044: transform11
+    400046: transform12
+    400048: transform13
+    400050: transform14
+    400052: transform15
+    400054: transform16
+    400056: transform17
+    400058: transform2
+    400060: transform3
+    400062: transform4
+    400064: transform6
+    400066: transform7
+    400068: transform8
+    400070: transform9
+    400072: Verengung__vorne_
+    2300000: AntikoerperMaterial__DUMMY___werden_eingespritzt_
+    2300002: Kolben__ganz_
+    2300004: Spritze__ganz_
+    3300000: AntikoerperMaterial__DUMMY___werden_eingespritzt_
+    3300002: Kolben__ganz_
+    3300004: Spritze__ganz_
+    4300000: Kolben__ganz_
+    4300002: Spritze__ganz_
+    4300004: AntikoerperMaterial__DUMMY___werden_eingespritzt_
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
