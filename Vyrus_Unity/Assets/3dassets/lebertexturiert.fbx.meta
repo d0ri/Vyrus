@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 50429c2d79283e547aa941723c975210
-timeCreated: 1462351342
+guid: 4403ac58221c510448f674d9b42c0435
+timeCreated: 1462778718
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -44,23 +44,32 @@ ModelImporter:
     100072: pSphere5
     100074: pSphere6
     100076: pSphere7
-    100078: transform1
-    100080: transform10
-    100082: transform11
-    100084: transform12
-    100086: transform13
-    100088: transform14
-    100090: transform15
-    100092: transform16
-    100094: transform17
-    100096: transform2
-    100098: transform3
-    100100: transform4
-    100102: transform5
-    100104: transform6
-    100106: transform7
-    100108: transform8
-    100110: transform9
+    100078: pSphere8
+    100080: transform1
+    100082: transform10
+    100084: transform11
+    100086: transform12
+    100088: transform13
+    100090: transform14
+    100092: transform15
+    100094: transform16
+    100096: transform17
+    100098: transform18
+    100100: transform19
+    100102: transform2
+    100104: transform20
+    100106: transform21
+    100108: transform22
+    100110: transform23
+    100112: transform24
+    100114: transform25
+    100116: transform3
+    100118: transform4
+    100120: transform5
+    100122: transform6
+    100124: transform7
+    100126: transform8
+    100128: transform9
     400000: group
     400002: group1
     400004: group2
@@ -100,52 +109,40 @@ ModelImporter:
     400072: pSphere5
     400074: pSphere6
     400076: pSphere7
-    400078: transform1
-    400080: transform10
-    400082: transform11
-    400084: transform12
-    400086: transform13
-    400088: transform14
-    400090: transform15
-    400092: transform16
-    400094: transform17
-    400096: transform2
-    400098: transform3
-    400100: transform4
-    400102: transform5
-    400104: transform6
-    400106: transform7
-    400108: transform8
-    400110: transform9
-    2300000: polySurface10
-    2300002: polySurface11
-    2300004: polySurface12
-    2300006: polySurface13
-    2300008: polySurface14
-    2300010: polySurface15
-    2300012: polySurface8
-    2300014: polySurface9
-    3300000: polySurface10
-    3300002: polySurface11
-    3300004: polySurface12
-    3300006: polySurface13
-    3300008: polySurface14
-    3300010: polySurface15
-    3300012: polySurface8
-    3300014: polySurface9
-    4300000: polySurface8
-    4300002: polySurface9
-    4300004: polySurface10
-    4300006: polySurface11
-    4300008: polySurface12
-    4300010: polySurface13
-    4300012: polySurface14
-    4300014: polySurface15
+    400078: pSphere8
+    400080: transform1
+    400082: transform10
+    400084: transform11
+    400086: transform12
+    400088: transform13
+    400090: transform14
+    400092: transform15
+    400094: transform16
+    400096: transform17
+    400098: transform18
+    400100: transform19
+    400102: transform2
+    400104: transform20
+    400106: transform21
+    400108: transform22
+    400110: transform23
+    400112: transform24
+    400114: transform25
+    400116: transform3
+    400118: transform4
+    400120: transform5
+    400122: transform6
+    400124: transform7
+    400126: transform8
+    400128: transform9
+    2300000: pSphere8
+    3300000: pSphere8
+    4300000: pSphere8
     9500000: //RootNode
     11100000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 2
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
