@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Einschränken : MonoBehaviour {
+public class Einschraenken : MonoBehaviour {
 
 	public GameObject virus;
 	public float langsamkeit = 1f;

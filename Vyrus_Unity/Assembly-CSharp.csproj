@@ -47,7 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Antikoerperbewegung.cs" />
      <Compile Include="Assets\Scripts\Antikoerperkollision.cs" />
-     <Compile Include="Assets\Scripts\Einschränken.cs" />
+     <Compile Include="Assets\Scripts\Einschraenken.cs" />
      <Compile Include="Assets\Scripts\Farbe.cs" />
      <Compile Include="Assets\Scripts\Farbe1aus6.cs" />
      <Compile Include="Assets\Scripts\Gegnerbewegung.cs" />
