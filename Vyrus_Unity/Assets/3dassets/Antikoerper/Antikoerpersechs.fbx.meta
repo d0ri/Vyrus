@@ -70,16 +70,19 @@ ModelImporter:
     2300004: pTorus10
     2300006: pTorus4
     2300008: pTorus7
+    2300010: //RootNode
     3300000: pSphere1
     3300002: pSphere2
     3300004: pTorus10
     3300006: pTorus4
     3300008: pTorus7
+    3300010: //RootNode
     4300000: pTorus4
     4300002: pTorus7
     4300004: pTorus10
     4300006: pSphere1
     4300008: pSphere2
+    4300010: pTorus11
     9500000: //RootNode
   materials:
     importMaterials: 1
