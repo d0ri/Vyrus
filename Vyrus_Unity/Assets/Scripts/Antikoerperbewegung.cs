@@ -22,16 +22,16 @@ public class Antikoerperbewegung : MonoBehaviour {
 		Virus = GameObject.FindGameObjectWithTag ("Player"); //findet Virus mit Tag
 		timer = duration; // für Vektorberechnung bei Start
 
-		//ZUFALLSFARBE!
-		GetComponent<Renderer> ().material.color = Virus.GetComponent<Renderer>().material.color;
-		//TEST!
+
+		GetComponent<Renderer> ().material.color = Virus.GetComponent<Renderer>().material.GetColor("_SpecColor");
+
 	}
 
 
 	void Update () {
 		direction = (Virus.transform.position - transform.position); //berechnet Vektor von Antikörper zu Virus
 
-		virCol = Virus.GetComponent<Renderer>().material.color; //Definition virMat
+		virCol = Virus.GetComponent<Renderer>().material.GetColor("_SpecColor"); //Definition virMat
 		antiCol = GetComponent<Renderer>().material.color; //Definition antiMat
 		r = Mathf.Abs(virCol.r - antiCol.r); //berechnet Farbunterschied roter Kanal
 		g = Mathf.Abs(virCol.g - antiCol.g); //--grüner Kanal
