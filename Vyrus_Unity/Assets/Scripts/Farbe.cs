@@ -18,6 +18,7 @@ public class Farbe : MonoBehaviour {
 			g = (4*old.g+zelle.g)/5; //Mischt Wert im Verhältnis 4 zu 1
 			b = (4*old.b+zelle.b)/5; 
 			GetComponent<Renderer> ().material.SetColor ("_SpecColor", new Color (r, g, b, 0.7f));//neue Farbe
+			GetComponent<Renderer> ().material.SetColor ("_EmissionColor", new Color (r, g, b, 0.7f));//neue Emmission-Farbe
 		}
 	}
 }

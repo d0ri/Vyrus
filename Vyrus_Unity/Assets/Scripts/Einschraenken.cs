@@ -14,7 +14,7 @@ public class Einschraenken : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
-			Debug.Log ("COLLISSION");
+			//Debug.Log ("COLLISSION");
 			StartCoroutine (Freeze());
 		}
 	}
