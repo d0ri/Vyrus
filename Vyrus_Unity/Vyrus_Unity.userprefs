@@ -2,14 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Antikoerperbewegung.cs">
     <Files>
+      <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="47" Column="3" />
       <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Einschraenken.cs" Line="17" Column="6" />
-      <File FileName="Assets\Scripts\Farbe.cs" Line="25" Column="1" />
+      <File FileName="Assets\Scripts\Einschraenken.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Farbe.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellenerstellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="54" Column="4" />
       <File FileName="Assets\Scripts\SchrumpfenueberZeit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Farbe1aus6.cs" Line="10" Column="1" />
+      <File FileName="Assets\Scripts\Farbe1aus6.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

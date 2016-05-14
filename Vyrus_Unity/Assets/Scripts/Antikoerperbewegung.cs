@@ -17,8 +17,11 @@ public class Antikoerperbewegung : MonoBehaviour {
 	Vector3 erratic; //Zufallskomponente der Bewegung
 	float timer = 0f; //Timer
 	public float duration = 5f; //Dauer bis Richtungsänderung
+
 	public Quaternion orientierung; // Orientierung des Antikörpers (Richtung Virus)
 	public float drehung; //orientierung anpassen
+	public int vorwaerts; //(1,2,3,4) drehung ausgleichen
+
 
 	void Start () {
 		Virus = GameObject.FindGameObjectWithTag ("Player"); //findet Virus mit Tag
@@ -32,8 +35,8 @@ public class Antikoerperbewegung : MonoBehaviour {
 
 	void Update () {
 		direction = (Virus.transform.position - transform.position); //berechnet Vektor von Antikörper zu Virus
-		//orientierung = Quaternion.LookRotation(Virus.transform.position-transform.position)*Quaternion.Euler(0,drehung,0); //der antikoerper orientiert sich richtung virus
-		//transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f);
+		orientierung = Quaternion.LookRotation(Virus.transform.position-transform.position)*Quaternion.Euler(0,drehung,0); //der antikoerper orientiert sich richtung virus
+		transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f);
 		virCol = Virus.GetComponent<Renderer>().material.GetColor("_SpecColor"); //Definition virMat
 		antiCol = GetComponent<Renderer>().material.color; //Definition antiMat
 		r = Mathf.Abs(virCol.r - antiCol.r); //berechnet Farbunterschied roter Kanal
@@ -50,10 +53,32 @@ public class Antikoerperbewegung : MonoBehaviour {
 		}
 
 		if (rgbo <= 2f || direction.magnitude >= 20f ){
-			GetComponent<Rigidbody>().AddForce(erratic.normalized*baseSpeed, ForceMode.VelocityChange); //für großen Unterschied
+			if(vorwaerts == 1){
+				transform.position += transform.forward * Time.deltaTime * 10; 
+			}
+			if(vorwaerts == 2){
+				transform.position += transform.right * Time.deltaTime * 10; 
+			}
+			if(vorwaerts == 3){
+				transform.position += transform.forward * Time.deltaTime * -1f * 10; 
+			}
+			if(vorwaerts == 4){
+				transform.position += transform.right * Time.deltaTime * -1f * 10; 
+			}
 		}
 			else {
-			GetComponent<Rigidbody>().AddForce(direction.normalized*speed, ForceMode.VelocityChange); //für kleinen Unterschied
+			if(vorwaerts == 1){
+			transform.position += transform.forward * Time.deltaTime * 10; 
+			}
+			if(vorwaerts == 2){
+				transform.position += transform.right * Time.deltaTime * 10;
+			}
+			if(vorwaerts == 3){
+				transform.position += transform.forward * Time.deltaTime * -1f * 10;
+			}
+			if(vorwaerts == 4){
+				transform.position += transform.right * Time.deltaTime * -1f * 10; 
+			}
 			}
 	}
 }
