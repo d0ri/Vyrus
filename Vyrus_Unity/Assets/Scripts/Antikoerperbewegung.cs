@@ -5,7 +5,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 
 	GameObject Virus; //Virus
 	Vector3 direction; //Vektor von Antikörper zu Virus
-	float speed; //Variable Geschwindigkeit
+	public float speed; //Variable Geschwindigkeit
 	public float baseSpeed = 1f; //Grundgeschwindigkeit
 	public float speedfactor = .1f; //Multiplikator Geschwindigkeit
 	Color virCol; //Farbe Virus
@@ -32,8 +32,8 @@ public class Antikoerperbewegung : MonoBehaviour {
 
 	void Update () {
 		direction = (Virus.transform.position - transform.position); //berechnet Vektor von Antikörper zu Virus
-		orientierung = Quaternion.LookRotation(Virus.transform.position-transform.position)*Quaternion.Euler(0,drehung,0); //der antikoerper orientiert sich richtung virus
-		transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f);
+		//orientierung = Quaternion.LookRotation(Virus.transform.position-transform.position)*Quaternion.Euler(0,drehung,0); //der antikoerper orientiert sich richtung virus
+		//transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f);
 		virCol = Virus.GetComponent<Renderer>().material.GetColor("_SpecColor"); //Definition virMat
 		antiCol = GetComponent<Renderer>().material.color; //Definition antiMat
 		r = Mathf.Abs(virCol.r - antiCol.r); //berechnet Farbunterschied roter Kanal
