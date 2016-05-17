@@ -48,11 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Antikoerperbewegung.cs" />
      <Compile Include="Assets\Scripts\Antikoerperkollision.cs" />
+     <Compile Include="Assets\Scripts\Einschraenken.cs" />
      <Compile Include="Assets\Scripts\Farbe.cs" />
      <Compile Include="Assets\Scripts\Farbe1aus6.cs" />
      <Compile Include="Assets\Scripts\Gegnerbewegung.cs" />
      <Compile Include="Assets\Scripts\KameraFolgen.cs" />
      <Compile Include="Assets\Scripts\SchrumpfenueberZeit.cs" />
+     <Compile Include="Assets\Scripts\Spritze.cs" />
      <Compile Include="Assets\Scripts\VirusBewegung.cs" />
      <Compile Include="Assets\Scripts\Zellen.cs" />
      <Compile Include="Assets\Scripts\Zellenerstellen.cs" />
