@@ -14,7 +14,7 @@ public class Zellenerstellen : MonoBehaviour {
 	void Update () {
 		Zellen = GameObject.FindGameObjectsWithTag("Zelle");
 		count = Zellen.Length;
-		if (count <= 100f) {
+		if (count <= 400f) {
 			Instantiate (Zelle, new Vector3 (Random.Range(-160, 160), .1f, Random.Range(-190, 90)), Quaternion.identity);
 		}
 	}

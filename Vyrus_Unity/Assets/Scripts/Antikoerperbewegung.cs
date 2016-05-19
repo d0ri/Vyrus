@@ -14,13 +14,15 @@ public class Antikoerperbewegung : MonoBehaviour {
 	float g; //--grüner Kanal
 	float b; //--blauer Kanal
 	public float rgbo; //--RGB unterschied (0, 3)
-//	Vector3 erratic; //Zufallskomponente der Bewegung
+	//	Vector3 erratic; //Zufallskomponente der Bewegung
 	float timer = 0f; //Timer
 	public float duration = 5f; //Dauer bis Richtungsänderung
 
 	public Quaternion orientierung; // Orientierung des Antikörpers (Richtung Virus)
 	public float drehung; //orientierung anpassen
 	public int vorwaerts; //(1,2,3,4) drehung ausgleichen
+
+	float todesstoss = 30f; //zerstört Antikoerper nach 10 sekunden ohne Kontakt mit Virus
 
 
 	void Start () {
@@ -35,7 +37,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.transform.tag == "Hindernis") {
-			transform.rotation = Quaternion.Euler (0, 180f, 0);
+			transform.rotation = Quaternion.Euler (0, 180f, 0); //Wenn der Antikoerper auf ein Hindernis stösst, wechselt er die Richtung
 		}
 	}
 
@@ -47,7 +49,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 		r = Mathf.Abs(virCol.r - antiCol.r); //berechnet Farbunterschied roter Kanal
 		g = Mathf.Abs(virCol.g - antiCol.g); //--grüner Kanal
 		b = Mathf.Abs(virCol.b - antiCol.b); //--blauer kanal
-		rgbo = 2.5f*(3f - (r+g+b)); //--RGB unterschied (0, 3)
+		rgbo = (3f - (r+g+b)); //--RGB unterschied (0, 3)
 		//speed = baseSpeed + speedfactor * rgbo; //Geschwindigkeit berechnen
 
 
@@ -56,11 +58,13 @@ public class Antikoerperbewegung : MonoBehaviour {
 		} else {
 			if(direction.magnitude >= 20f){; //berechnet Zufallsvektor
 				transform.rotation = Quaternion.Euler(0,Random.value*45f,0);
-			timer = 0; //setzt Timer zurück
+				timer = 0; //setzt Timer zurück
 			}
 		}
 
-		if (rgbo <= 2f || direction.magnitude >= 20f ){
+		if (rgbo <= 10f || direction.magnitude >= 70f ){
+
+			todesstoss -= Time.deltaTime;
 
 			if(vorwaerts == 1){
 				transform.position += transform.forward * Time.deltaTime * 1.5f; 
@@ -75,23 +79,28 @@ public class Antikoerperbewegung : MonoBehaviour {
 				transform.position += transform.right * Time.deltaTime * -1f * 1.5f; 
 			}
 		}
-			else {
+		else {
+
+			todesstoss = 180f;
 
 			orientierung = Quaternion.LookRotation(Virus.transform.position-transform.position)*Quaternion.Euler(0,drehung,0); //der antikoerper orientiert sich richtung virus
 			transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f); //Lerp
 
 			if(vorwaerts == 1){
-				transform.position += transform.forward * Time.deltaTime * rgbo; 
+				transform.position += transform.forward * Time.deltaTime * Mathf.Pow(rgbo,4); 
 			}
 			if(vorwaerts == 2){
-				transform.position += transform.right * Time.deltaTime * rgbo;
+				transform.position += transform.right * Time.deltaTime * Mathf.Pow(rgbo,4);
 			}
 			if(vorwaerts == 3){
-				transform.position += transform.forward * Time.deltaTime * -1f * rgbo;
+				transform.position += transform.forward * Time.deltaTime * -1f * Mathf.Pow(rgbo,4);
 			}
 			if(vorwaerts == 4){
-				transform.position += transform.right * Time.deltaTime * -1f * rgbo; 
+				transform.position += transform.right * Time.deltaTime * -1f * Mathf.Pow(rgbo,4); 
 			}
-			}
+		}
+		if (todesstoss <= 0) {
+			Destroy (this.gameObject);//Antikoerper wir zerstoert 
+		}
 	}
 }

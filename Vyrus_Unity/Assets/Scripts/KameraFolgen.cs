@@ -14,7 +14,7 @@ public class KameraFolgen : MonoBehaviour {
 	}
 	
 	void Update () {
-		pythagoras = distance * player.transform.localScale.x; //Berücksichtigung der Spielergröße
+		pythagoras = distance * 100;//player.transform.localScale.x; //Berücksichtigung der Spielergröße
 		offset = new Vector3 (0,pythagoras,0);
 		transform.position = Vector3.Lerp (transform.position, player.transform.position + offset, smooth);
 	}

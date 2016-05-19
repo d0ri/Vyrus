@@ -10,7 +10,7 @@ public class SchrumpfenueberZeit : MonoBehaviour {
 
 	void Decrease () {   //Größe des Spielers nimmt ab bis 1.0
 		if (transform.localScale.x >= 1f) {
-			transform.localScale *= .9999f;
+			transform.localScale *= .995f;
 		}
 	}
 
