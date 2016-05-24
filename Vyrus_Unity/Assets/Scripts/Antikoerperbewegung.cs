@@ -62,7 +62,7 @@ public class Antikoerperbewegung : MonoBehaviour {
 			}
 		}
 
-		if (rgbo <= 10f || direction.magnitude >= 70f ){
+		if (rgbo <= 1.8f || direction.magnitude >= 70f ){
 
 			todesstoss -= Time.deltaTime;
 
@@ -87,16 +87,16 @@ public class Antikoerperbewegung : MonoBehaviour {
 			transform.rotation = Quaternion.Lerp(transform.rotation,orientierung,.5f); //Lerp
 
 			if(vorwaerts == 1){
-				transform.position += transform.forward * Time.deltaTime * Mathf.Pow(rgbo,4); 
+				transform.position += transform.forward * Time.deltaTime * Mathf.Pow(rgbo,2); 
 			}
 			if(vorwaerts == 2){
-				transform.position += transform.right * Time.deltaTime * Mathf.Pow(rgbo,4);
+				transform.position += transform.right * Time.deltaTime * Mathf.Pow(rgbo,2);
 			}
 			if(vorwaerts == 3){
-				transform.position += transform.forward * Time.deltaTime * -1f * Mathf.Pow(rgbo,4);
+				transform.position += transform.forward * Time.deltaTime * -1f * Mathf.Pow(rgbo,2);
 			}
 			if(vorwaerts == 4){
-				transform.position += transform.right * Time.deltaTime * -1f * Mathf.Pow(rgbo,4); 
+				transform.position += transform.right * Time.deltaTime * -1f * Mathf.Pow(rgbo,2); 
 			}
 		}
 		if (todesstoss <= 0) {
