@@ -1,19 +1,21 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Sterben.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MagnetZelle.cs">
     <Files>
+      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="33" Column="1" />
       <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="100" Column="5" />
-      <File FileName="Assets\Scripts\Zellen.cs" Line="19" Column="35" />
+      <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Einschraenken.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Farbe.cs" Line="15" Column="69" />
+      <File FileName="Assets\Scripts\Farbe.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellenerstellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SchrumpfenueberZeit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Farbe1aus6.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Spritze.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\KameraFolgen.cs" Line="1" Column="1" />
-      <File FileName="Assets\GameoverTexture.cs" Line="11" Column="25" />
-      <File FileName="Assets\Sterben.cs" Line="33" Column="1" NotebookId="1" />
+      <File FileName="Assets\GameoverTexture.cs" Line="1" Column="1" />
+      <File FileName="Assets\Sterben.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
