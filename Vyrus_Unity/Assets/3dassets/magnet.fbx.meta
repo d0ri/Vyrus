@@ -28,6 +28,7 @@ ModelImporter:
     100040: transform5
     100042: transform6
     100044: transform7
+    100046: group3
     400000: group
     400002: group1
     400004: group2
@@ -51,6 +52,7 @@ ModelImporter:
     400040: transform5
     400042: transform6
     400044: transform7
+    400046: group3
     2300000: pasted__pCylinder1
     2300002: pasted__pCylinder1 1
     2300004: pCylinder1
