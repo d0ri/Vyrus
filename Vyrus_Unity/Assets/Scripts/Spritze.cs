@@ -6,6 +6,7 @@ public class Spritze : MonoBehaviour {
 	Material spritzeM;
 	Material virusM;
 	GameObject[] Antis; //vorhandene Antikoerper
+	public Vector3[] Spawn = new Vector3[7]; //Punkte an denen Antikoerper spawnen können
 	//float timer = 0f;
 
 	float forschung;
@@ -13,7 +14,7 @@ public class Spritze : MonoBehaviour {
 	float zyklus =1f;
 	bool laeuft = true; //gibt an ob gerade die Forschung läuft
 
-	int antianzahl = 50;
+	int antianzahl = 20;
 	public GameObject[] Antikoerper; //Prefab Antikoerper 
 
 	void Start () {
@@ -33,7 +34,7 @@ public class Spritze : MonoBehaviour {
 			StartCoroutine (Spritzvorgang()); //Spritzvorgang auslösen
 		}
 		if (Antis.Length < antianzahl) {
-			Instantiate (Antikoerper[(Random.Range(0,3))], new Vector3 (Random.Range(-160, 160), .1f, Random.Range(-190, 90)), Quaternion.identity);
+			Instantiate (Antikoerper[(Random.Range(0,3))], (Spawn[(Random.Range(0,7))])+new Vector3(10*Random.value,0,10*Random.value), Quaternion.identity);
 		}
 
 	}
@@ -56,7 +57,7 @@ public class Spritze : MonoBehaviour {
 		transform.GetChild (0).gameObject.SetActive (false); //Spritze wird wieder ausgeschaltet
 
 		yield return new WaitForSeconds (1);
-		antianzahl += 10;
+		antianzahl += 3;
 		transform.GetChild (1).gameObject.SetActive (true); // schaltet balken ein
 		laeuft = true;
 	}

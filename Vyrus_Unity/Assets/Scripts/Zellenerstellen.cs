@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class Zellenerstellen : MonoBehaviour {
+	public Vector3[] Spawn = new Vector3[10]; //Punkte an denen die Zellen spawnen können
 	GameObject[] Zellen;
+	public float spread = 35; //Abweichung vom Spawnpunkt
 	public float count;
 	float startcount;
 	public GameObject Zelle;
@@ -14,8 +16,8 @@ public class Zellenerstellen : MonoBehaviour {
 	void Update () {
 		Zellen = GameObject.FindGameObjectsWithTag("Zelle");
 		count = Zellen.Length;
-		if (count <= 400f) {
-			Instantiate (Zelle, new Vector3 (Random.Range(-160, 160), .1f, Random.Range(-190, 90)), Quaternion.identity);
+		if (count <= 150f) {
+			Instantiate (Zelle, (Spawn [(Random.Range(0,10))])+new Vector3(spread*Random.value,0,spread*Random.value), Quaternion.identity);
 		}
 	}
 }

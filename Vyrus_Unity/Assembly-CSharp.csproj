@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\pitch.cs" />
      <Compile Include="Assets\Scripts\zellenfressen.cs" />
      <Compile Include="Assets\Sterben.cs" />
+     <Compile Include="Assets\pause.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
