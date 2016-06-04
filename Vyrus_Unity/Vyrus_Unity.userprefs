@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Zellenerstellen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\zellenfressen.cs">
     <Files>
+      <File FileName="Assets\Scripts\zellenfressen.cs" Line="10" Column="90" />
       <File FileName="Assets\pause.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Spritze.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MagnetZelle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MagnetVirus.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Einschraenken.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Farbe.cs" Line="1" Column="1" />

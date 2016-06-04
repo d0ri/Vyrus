@@ -7,7 +7,7 @@ public class zellenfressen : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.transform.tag == "Zelle") {
 			other.transform.parent = this.transform;
-			transform.localScale += new Vector3 (wt, wt, wt);
+			transform.localScale = Vector3.one*(Mathf.Pow((Mathf.Pow(transform.localScale.x,3)+100000f),(1f/3f)));
 		}
 	}
 }
