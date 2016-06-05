@@ -6,6 +6,8 @@ public class Spritze : MonoBehaviour {
 	Material spritzeM;
 	Material virusM;
 	GameObject[] Antis; //vorhandene Antikoerper
+	public GameObject Musik;
+	public AudioClip Spritzensound;
 	public Vector3[] Spawn = new Vector3[7]; //Punkte an denen Antikoerper spawnen können
 	//float timer = 0f;
 
@@ -40,6 +42,7 @@ public class Spritze : MonoBehaviour {
 	}
 	public IEnumerator Spritzvorgang ()
 	{
+		Musik.SetActive (false);
 		transform.GetChild (1).gameObject.SetActive (false); //schaltet balken ab
 		laeuft = false;
 		if (zyklus <= 25f) {
@@ -49,6 +52,7 @@ public class Spritze : MonoBehaviour {
 		transform.GetChild (0).gameObject.SetActive (true);
 		spritzeM.color = virusM.GetColor ("_SpecColor");
 		spritzeM.SetColor ("_EmissionColor", virusM.GetColor ("_SpecColor"));
+		AudioSource.PlayClipAtPoint (Spritzensound, transform.position);
 		Antis = GameObject.FindGameObjectsWithTag ("Anti"); //sucht nach allen Antikoerpern
 		foreach (GameObject antikoerper in Antis) { //Fuer alle Antikoerper
 			antikoerper.GetComponent<Renderer> ().material.color = virusM.GetColor ("_SpecColor"); //antikörper erhalten die Farbe des Virus
