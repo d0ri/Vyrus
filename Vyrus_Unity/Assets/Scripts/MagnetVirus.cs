@@ -14,19 +14,20 @@ public class MagnetVirus : MonoBehaviour {
 			nag = true;
 			Destroy (other.gameObject);}//gameobject ergänzt (alex)
 
-		if (nag == true) {//= ergänzt (alex)
-			countdown -= Time.deltaTime;}
 
-		if (countdown <= 0) { 
-			nag = false;
-			countdown = 10.0f;}
+
+
 	}
 
 
 
 
-	// Update is called once per frame
+	// 
 	void Update () {
-
+		if (nag == true) {//= ergänzt (alex)	//
+			countdown -= Time.deltaTime;}		//
+		if (countdown <= 0) { 					// in Update verschoben (alex)
+			nag = false;						//
+			countdown = 10.0f;}					//
 	}
 }

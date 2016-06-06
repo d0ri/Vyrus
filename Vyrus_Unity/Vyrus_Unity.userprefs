@@ -1,15 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MagnetZelle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spritze.cs">
     <Files>
-      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="20" Column="25" />
+      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="34" Column="1" />
       <File FileName="Assets\Scripts\Antikoerperkollision.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="23" Column="111" />
-      <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="9" Column="22" />
+      <File FileName="Assets\Scripts\zellenfressen.cs" Line="18" Column="20" />
       <File FileName="Assets\Scripts\Zellenerstellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Sterben.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spritze.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spritze.cs" Line="60" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

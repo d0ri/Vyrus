@@ -6,7 +6,7 @@ public class Spritze : MonoBehaviour {
 	Material spritzeM;
 	Material virusM;
 	GameObject[] Antis; //vorhandene Antikoerper
-	public GameObject Musik;
+	//public GameObject Musik; <- nicht festgelegt(alex)
 	public AudioClip Spritzensound;
 	public Vector3[] Spawn = new Vector3[7]; //Punkte an denen Antikoerper spawnen können
 	//float timer = 0f;
@@ -32,17 +32,19 @@ public class Spritze : MonoBehaviour {
 		}
 		balken.fillAmount = forschung;
 		virusM = GameObject.FindGameObjectWithTag ("Player").GetComponent<Renderer> ().material;
-		if (forschung >=1f) { //M-Taste nur für Testzwecke
+		if (forschung >=1f) { //wenn forschung beendet, dann...
 			StartCoroutine (Spritzvorgang()); //Spritzvorgang auslösen
+			for (int i=0; i < (antianzahl-Antis.Length); i++){
+				Instantiate (Antikoerper[(Random.Range(0,3))], (Spawn[(Random.Range(0,7))])+new Vector3(10*Random.value,0,10*Random.value), Quaternion.identity);
+			}
+
 		}
-		if (Antis.Length < antianzahl) {
-			Instantiate (Antikoerper[(Random.Range(0,3))], (Spawn[(Random.Range(0,7))])+new Vector3(10*Random.value,0,10*Random.value), Quaternion.identity);
-		}
+
 
 	}
 	public IEnumerator Spritzvorgang ()
 	{
-		Musik.SetActive (false);
+		//Musik.SetActive (false); <- nicht festgelegt (siehe oben)(alex)
 		transform.GetChild (1).gameObject.SetActive (false); //schaltet balken ab
 		laeuft = false;
 		if (zyklus <= 25f) {
@@ -53,6 +55,9 @@ public class Spritze : MonoBehaviour {
 		spritzeM.color = virusM.GetColor ("_SpecColor");
 		spritzeM.SetColor ("_EmissionColor", virusM.GetColor ("_SpecColor"));
 		AudioSource.PlayClipAtPoint (Spritzensound, transform.position);
+		//if (Antis.Length < antianzahl) {
+		//	Instantiate (Antikoerper[(Random.Range(0,3))], (Spawn[(Random.Range(0,7))])+new Vector3(10*Random.value,0,10*Random.value), Quaternion.identity);
+		//}
 		Antis = GameObject.FindGameObjectsWithTag ("Anti"); //sucht nach allen Antikoerpern
 		foreach (GameObject antikoerper in Antis) { //Fuer alle Antikoerper
 			antikoerper.GetComponent<Renderer> ().material.color = virusM.GetColor ("_SpecColor"); //antikörper erhalten die Farbe des Virus
