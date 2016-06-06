@@ -12,9 +12,9 @@ public class MagnetVirus : MonoBehaviour {
 
 		if (other.tag == "Magnet") {
 			nag = true;
-			Destroy (other);}
+			Destroy (other.gameObject);}//gameobject ergänzt (alex)
 
-		if (nag = true) {
+		if (nag == true) {//= ergänzt (alex)
 			countdown -= Time.deltaTime;}
 
 		if (countdown <= 0) { 

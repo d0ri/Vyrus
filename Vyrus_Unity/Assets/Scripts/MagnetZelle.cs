@@ -19,8 +19,8 @@ public class MagnetZelle : MonoBehaviour {
 	{
 
 		if (Virus.GetComponent<MagnetVirus> ().nag == true) {
-			if (Distance (transform.position - Virus.transform.position) <= 10.0f) {
-				transform.position = Vector3.Lerp (transform.position, Virus.transform.position, Time.deltaTime * 0.5f);
+			if (Distance (Virus.transform.position - transform.position) <= 100.0f) {// Subtrahenden vertauscht (alex)
+				transform.position = Vector3.Lerp (transform.position, Virus.transform.position, Time.deltaTime * 1f);//1f
 				AudioSource.PlayClipAtPoint (MagnetSound, transform.position);
 			}
 		}
