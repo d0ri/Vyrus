@@ -42,6 +42,10 @@ public class Antikoerperbewegung : MonoBehaviour {
 	}
 
 	void Update () {
+		if ((Vector3.Distance (transform.position, Virus.transform.position) >= 30)) {
+			Destroy (this.gameObject);
+		}
+
 		direction = (Virus.transform.position - transform.position); //berechnet Vektor von Antikörper zu Virus
 
 		virCol = Virus.GetComponent<Renderer>().material.GetColor("_SpecColor"); //Definition virMat

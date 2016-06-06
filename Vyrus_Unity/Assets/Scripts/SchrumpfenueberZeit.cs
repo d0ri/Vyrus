@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class SchrumpfenueberZeit : MonoBehaviour {
-	public AudioClip SchrumpfenSound;
+	//public AudioClip SchrumpfenSound; //gestrichenes Feature
 
-	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("Decrease", 0, .1f);
 	}
@@ -12,7 +11,7 @@ public class SchrumpfenueberZeit : MonoBehaviour {
 	void Decrease () {   //Größe des Spielers nimmt ab bis 1.0
 		if (transform.localScale.x >= 1f) {
 			transform.localScale *= .995f;
-			AudioSource.PlayClipAtPoint (SchrumpfenSound, transform.position);
+			//AudioSource.PlayClipAtPoint (SchrumpfenSound, transform.position); //gestrichenes Feature
 		}
 	}
 
