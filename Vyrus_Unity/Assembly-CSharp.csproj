@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\MagnetVirus.cs" />
      <Compile Include="Assets\Scripts\MagnetZelle.cs" />
      <Compile Include="Assets\Scripts\SchrumpfenueberZeit.cs" />
+     <Compile Include="Assets\Scripts\Schutz.cs" />
      <Compile Include="Assets\Scripts\SpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Spritze.cs" />
      <Compile Include="Assets\Scripts\Sterben.cs" />

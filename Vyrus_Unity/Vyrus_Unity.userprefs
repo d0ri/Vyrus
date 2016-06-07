@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Antikoerperbewegung.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Schild.cs">
     <Files>
-      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="34" Column="1" />
+      <File FileName="Assets\Scripts\Schild.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\pitch.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Antikoerperkollision.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="9" Column="22" />
+      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellenerstellen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spritze.cs" Line="24" Column="33" />
-      <File FileName="Assets\Scripts\SchrumpfenueberZeit.cs" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\Spritze.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SchrumpfenueberZeit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="46" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
