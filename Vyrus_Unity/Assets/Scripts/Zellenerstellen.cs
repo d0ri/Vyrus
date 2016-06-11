@@ -9,6 +9,7 @@ public class Zellenerstellen : MonoBehaviour {
 	float startcount;
 	public GameObject Zelle;
 	void Start () {
+		Zellen = GameObject.FindGameObjectsWithTag("Zelle");
 		count = Zellen.Length;
 	}
 
