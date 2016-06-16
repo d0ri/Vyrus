@@ -8,7 +8,6 @@ public class Sterben : MonoBehaviour {
 	public GameObject Musik;
 	public AudioClip Sterbesound;
 	public ParticleSystem partsys;
-	public MovieTexture got;
 
 	void Update () {
 		if (transform.localScale.x <= 40.0f){
@@ -23,7 +22,7 @@ public class Sterben : MonoBehaviour {
 		yield return new WaitForSeconds(2f);
 		TexturePlane.SetActive (true);
 		//got = TexturePlane.GetComponent<Renderer> ().material.mainTexture;
-		got.Play ();
+		//got.Play (); //obsolet
 
 		yield return new WaitForSeconds(3f); //
 		TexturePlane.SetActive (false);

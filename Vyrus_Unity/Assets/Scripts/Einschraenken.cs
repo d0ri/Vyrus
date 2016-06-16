@@ -3,13 +3,13 @@ using System.Collections;
 
 public class Einschraenken : MonoBehaviour {
 
-	public GameObject virus;
+	GameObject virus;
 	public float langsamkeit = 1f;
 	public float dauer = 3f;
-	public AudioClip Bremsgeräusch;
+	//public AudioClip Bremsgeräusch;
 
 	void start(){
-		//virus = GameObject.FindGameObjectWithTag ("Player");
+		virus = GameObject.FindGameObjectWithTag ("Player");
 	}
 
 
@@ -25,6 +25,6 @@ public class Einschraenken : MonoBehaviour {
 		virus.GetComponent<VirusBewegung> ().moveSpeed /= langsamkeit;
 		yield return new WaitForSeconds (dauer);
 		virus.GetComponent<VirusBewegung>().moveSpeed *= langsamkeit;
-		AudioSource.PlayClipAtPoint (Bremsgeräusch, transform.position);
+		//AudioSource.PlayClipAtPoint (Bremsgeräusch, transform.position);
 	}
 }

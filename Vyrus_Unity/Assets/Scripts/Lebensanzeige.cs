@@ -15,7 +15,7 @@ public class Lebensanzeige : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		scale = GameObject.FindGameObjectWithTag ("Player").transform.transform.localScale.x;
-		lebensbalken.fillAmount = (scale /70.0f)-0.4f;
+		lebensbalken.fillAmount = ((scale-40) /70.0f);
 		if (scale <= 60) {
 			lebensbalken.color = Color.red;
 		} else {
