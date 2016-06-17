@@ -22,6 +22,7 @@ public class Einschraenken : MonoBehaviour {
 
 	IEnumerator Freeze ()
 	{
+		virus = GameObject.FindGameObjectWithTag ("Player");//bugfix, definiert Virus
 		virus.GetComponent<VirusBewegung> ().moveSpeed /= langsamkeit;
 		yield return new WaitForSeconds (dauer);
 		virus.GetComponent<VirusBewegung>().moveSpeed *= langsamkeit;
