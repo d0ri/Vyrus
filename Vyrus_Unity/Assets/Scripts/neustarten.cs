@@ -1,20 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class neustarten : MonoBehaviour {
+public class restart : MonoBehaviour {
 	
-	public GameObject neustartenButton, pausePanel;
+	public Canvas pausePanel;
+	public Button restart;
 
 	public void restartCurrentScene() {
 		
 	}
 	void Start () {
-		
+
+		pausePanel = pausePanel.GetComponent<Canvas> ();
+		restart = restart.GetComponent<Button> ();
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void ExitPress()
+	{
+	pausePanel.enabled = true;
+	restart.enabled = false;
 	}
+
+	public void NoPress()
+	{
+		pausePanel.enabled = false;
+		restart.enabled = true;
+	}
+
+	public void StartLevel()
+	{
+		Application.loadedLevel();
+	}
+
 }
