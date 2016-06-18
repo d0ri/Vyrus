@@ -10,7 +10,7 @@ public class SpawnZellen : MonoBehaviour {
 
 	void Update (){
 		if(transform.childCount<maxZellen){
-			GameObject neueZelle = Instantiate (Zelle, transform.position + Vector3.up * 0.2f + new Vector3 (spread * Random.Range (-1f, 1f), 0, spread * Random.Range (-1f, 1f)), Quaternion.identity) as GameObject;
+			GameObject neueZelle = Instantiate (Zelle, transform.position + Vector3.up * 0.2f + new Vector3 (spread * Random.Range (-1f, 1f), 0, spread * Random.Range (-1f, 1f)), Quaternion.Euler(90, 0, 0)) as GameObject;
 			neueZelle.transform.parent = this.transform;
 		}
 	}

@@ -4,7 +4,7 @@ using System;
 
 public class MagnetZelle : MonoBehaviour {
 	//public GameObject Musik; Sinn? (alex)
-	public AudioClip MagnetSound;
+	//public AudioClip MagnetSound; magnetsound sollte nur einmal gespielt werden -> verschoben in MagnetVirus-Skript
 
     GameObject Virus;
 
@@ -19,18 +19,11 @@ public class MagnetZelle : MonoBehaviour {
 	{
 
 		if (Virus.GetComponent<MagnetVirus> ().nag == true) {
-			if (Vector3.Distance (Virus.transform.position, transform.position) <= 30.0f) {// Syntax korrigiert(alex)
+			if (Vector3.Distance (Virus.transform.position, transform.position) <= 12.0f) {// Syntax korrigiert(alex)
 				transform.position = Vector3.Lerp (transform.position, Virus.transform.position, Time.deltaTime * 2f);//2f(alex)
-				AudioSource.PlayClipAtPoint (MagnetSound, transform.position);
+				//AudioSource.PlayClipAtPoint (MagnetSound, transform.position);
 			}
 		}
 	}
-
-	//redundant (alex)
-//    private float Distance(Vector3 vector3)
-//		
-//    {
-//        throw new NotImplementedException();
-//    }
 }
 	
