@@ -1,38 +1,38 @@
 fileFormatVersion: 2
-guid: bb516f37c5f7e904db15d30f2c940fff
-timeCreated: 1466177223
+guid: ba0d5db19688dcb4f97ecd69ae683642
+timeCreated: 1466427138
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: pSphere1
-    100002: pSphere2
-    100004: pSphere3
-    100006: pSphere4
-    100008: pSphere5
-    100010: //RootNode
-    400000: pSphere1
-    400002: pSphere2
-    400004: pSphere3
-    400006: pSphere4
-    400008: pSphere5
-    400010: //RootNode
-    2300000: pSphere1
-    2300002: pSphere2
-    2300004: pSphere3
-    2300006: pSphere4
-    2300008: pSphere5
-    3300000: pSphere1
-    3300002: pSphere2
-    3300004: pSphere3
-    3300006: pSphere4
-    3300008: pSphere5
-    4300000: pSphere1
-    4300002: pSphere2
-    4300004: pSphere3
-    4300006: pSphere4
-    4300008: pSphere5
-    7400000: Take 001
+    100000: Animation_ganz
+    100002: pSphere1
+    100004: pSphere2
+    100006: pSphere3
+    100008: pSphere4
+    100010: pSphere5
+    100012: transform1
+    100014: transform2
+    100016: transform3
+    100018: transform4
+    100020: transform5
+    100022: //RootNode
+    400000: Animation_ganz
+    400002: pSphere1
+    400004: pSphere2
+    400006: pSphere3
+    400008: pSphere4
+    400010: pSphere5
+    400012: transform1
+    400014: transform2
+    400016: transform3
+    400018: transform4
+    400020: transform5
+    400022: //RootNode
+    2300000: Animation_ganz
+    3300000: Animation_ganz
+    4300000: Animation_ganz
+    7400000: Zwiebel_Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -56,17 +56,17 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Zwiebel_Take 001
       takeName: Take 001
-      firstFrame: 6
-      lastFrame: 520
+      firstFrame: 121
+      lastFrame: 545
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -82,15 +82,27 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
+      - path: Animation_ganz
+        weight: 1
       - path: pSphere1
+        weight: 1
+      - path: pSphere1/transform2
         weight: 1
       - path: pSphere2
         weight: 1
+      - path: pSphere2/transform5
+        weight: 1
       - path: pSphere3
+        weight: 1
+      - path: pSphere3/transform4
         weight: 1
       - path: pSphere4
         weight: 1
+      - path: pSphere4/transform3
+        weight: 1
       - path: pSphere5
+        weight: 1
+      - path: pSphere5/transform1
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
