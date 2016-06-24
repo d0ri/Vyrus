@@ -12,7 +12,10 @@ public class zellenfressen : MonoBehaviour {
 		
 		if (other.transform.tag == "Zelle") {
 			other.transform.parent = this.transform;
-			transform.localScale = Vector3.one*(Mathf.Pow((Mathf.Pow(transform.localScale.x,3)+100000f),(1f/3f)));
+			other.GetComponent<Collider> ().enabled = false;
+			if (transform.localScale.x <= 225f) {
+				transform.localScale = Vector3.one * (Mathf.Pow ((Mathf.Pow (transform.localScale.x, 3) + 100000f), (1f / 3f)));
+			}
 			AudioSource.PlayClipAtPoint (Fressgeräusch, transform.position,100);
 			anzahl++;
 			score.text = ("Gefressene Zellen |" + anzahl.ToString ())+"|";

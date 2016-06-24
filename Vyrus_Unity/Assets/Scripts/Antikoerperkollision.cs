@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Antikoerperkollision : MonoBehaviour {
-	public AudioClip Fressgeräusch;
+	//public AudioClip Fressgeräusch;
 	public AudioClip AnitkörperTrifftSound;
 	// Use this for initialization
 	void Start () {
