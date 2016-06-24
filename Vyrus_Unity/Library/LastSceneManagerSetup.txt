@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Level(RICHTIGENLEVELWAEHLEN)/6_Alex.unity
+- path: Assets/_Level(RICHTIGENLEVELWAEHLEN)/2_Jonas.unity
   isLoaded: 1
   isActive: 1
