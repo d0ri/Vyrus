@@ -6,7 +6,7 @@ public class Schild : MonoBehaviour {
 	public bool SchildAktiv = false; 
 	// Use this for initialization
 	void Start () {
-	
+		Physics.IgnoreLayerCollision (11,10);
 	}
 
 	void OnTriggerEnter (Collider other) {
@@ -27,5 +27,8 @@ public class Schild : MonoBehaviour {
 			countdown = 10.0f;
 		}
 		transform.GetChild (1).gameObject.SetActive (SchildAktiv);
+		Physics.IgnoreLayerCollision (0,8, SchildAktiv);//Gegner
+		Physics.IgnoreLayerCollision (0,9, SchildAktiv);//Antikoerper
+		//Physics.IgnoreLayerCollision (0,10, SchildAktiv);//Grund
 	}
 }
