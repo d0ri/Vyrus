@@ -12,8 +12,8 @@ public class SpawnPoint : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
-	
+	void OnDrawGizmos(){
+		Gizmos.color = Color.magenta;
+		Gizmos.DrawSphere (transform.position,3);
 	}
 }
