@@ -21,4 +21,7 @@ public class Farbe : MonoBehaviour {
 			GetComponent<Renderer> ().material.SetColor ("_EmissionColor", new Color (r, g, b, 0.7f));//neue Emmission-Farbe
 		}
 	}
+	void Update(){//für die Minimap
+		transform.GetChild (3).GetComponent<Renderer> ().material.color = GetComponent<Renderer> ().material.GetColor("_SpecColor") ;
+	}
 }
