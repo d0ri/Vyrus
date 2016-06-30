@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\OrganMinimapScript.cs" />
      <Compile Include="Assets\Scripts\Antikoerperbewegung.cs" />
      <Compile Include="Assets\Scripts\Antikoerperkollision.cs" />
      <Compile Include="Assets\Scripts\Einschraenken.cs" />
@@ -67,13 +66,13 @@
      <Compile Include="Assets\Scripts\Spritze.cs" />
      <Compile Include="Assets\Scripts\Sterben.cs" />
      <Compile Include="Assets\Scripts\VirusBewegung.cs" />
+     <Compile Include="Assets\Scripts\Waypoints.cs" />
      <Compile Include="Assets\Scripts\Zellen.cs" />
      <Compile Include="Assets\Scripts\Zellenerstellen.cs" />
      <Compile Include="Assets\Scripts\menuscript.cs" />
      <Compile Include="Assets\Scripts\pitch.cs" />
      <Compile Include="Assets\Scripts\startscreenscript.cs" />
      <Compile Include="Assets\Scripts\zellenfressen.cs" />
-     <Compile Include="Assets\Waypoints.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

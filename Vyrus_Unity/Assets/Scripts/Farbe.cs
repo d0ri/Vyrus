@@ -22,6 +22,7 @@ public class Farbe : MonoBehaviour {
 		}
 	}
 	void Update(){//für die Minimap
-		transform.GetChild (3).GetComponent<Renderer> ().material.color = GetComponent<Renderer> ().material.GetColor("_SpecColor") ;
+		Renderer mrend = transform.GetChild (3).GetComponent<Renderer> ();
+		mrend.material = GetComponent<Renderer> ().material;
 	}
 }

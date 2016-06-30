@@ -6,7 +6,7 @@ public class Zellen : MonoBehaviour {
 
 Vector3 posstart; //Position am Anfang des Fressvorgangs
 float zeitseitstart = 0f; //Zeit seit Beginn des Fressvorgangs
-float esistihmeinefristgegeben = 10f; //gibt an, nach wie vielen secs die Zelle stirbt; #Schiller
+float esistihmeinefristgegeben = 30f; //gibt an, nach wie vielen secs die Zelle stirbt; #Schiller
 
 	void Start(){
 		esistihmeinefristgegeben += Random.value * 10f;
