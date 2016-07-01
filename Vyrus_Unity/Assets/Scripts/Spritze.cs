@@ -16,7 +16,7 @@ public class Spritze : MonoBehaviour {
 	public float forschungsdauer = 10f;//je höher, desto länger die Forschungsdauer
 	public Image balken;
 	bool laeuft = true; //gibt an ob gerade die Forschung läuft
-	public GameObject[] Antikoerper; //Prefab Antikoerper 
+	//public GameObject[] Antikoerper; //Prefab Antikoerper 
 
 	void Start () {
 		forschung = 0f;

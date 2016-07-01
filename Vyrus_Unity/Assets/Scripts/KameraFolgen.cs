@@ -3,7 +3,7 @@ using System.Collections;
 
 public class KameraFolgen : MonoBehaviour {
 	
-	public GameObject player;
+	GameObject player;
 	
 	float pythagoras;
 	Vector3 offset = new Vector3 (0, 2, 0);
@@ -11,6 +11,7 @@ public class KameraFolgen : MonoBehaviour {
 	public float smooth = .65f;
 	
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	void Update () {
