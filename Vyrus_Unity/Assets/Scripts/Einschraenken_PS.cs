@@ -14,7 +14,7 @@ public class Einschraenken_PS : MonoBehaviour {
 
 
 	void OnParticleCollision(GameObject other){
-		if (other.tag == "Desinfektionsspray") {
+		if (other.tag == "Desinfektionsspray"&&GetComponent<Schild>().SchildAktiv==false) {
 			//Debug.Log ("COLLISSION");
 			StartCoroutine (Freeze());
 		}
