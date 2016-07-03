@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/_Level(RICHTIGENLEVELWAEHLEN)/2_Jonas.unity
-=======
-- path: Assets/_Level(RICHTIGENLEVELWAEHLEN)/1_Johanna.unity
->>>>>>> origin/development
   isLoaded: 1
   isActive: 1
