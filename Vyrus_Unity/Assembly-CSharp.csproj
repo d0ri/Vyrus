@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\Spritze.cs" />
      <Compile Include="Assets\Scripts\Sterben.cs" />
      <Compile Include="Assets\Scripts\VirusBewegung.cs" />
+     <Compile Include="Assets\Scripts\Vorspann.cs" />
      <Compile Include="Assets\Scripts\Waypoints.cs" />
      <Compile Include="Assets\Scripts\Zellen.cs" />
      <Compile Include="Assets\Scripts\Zellenerstellen.cs" />
