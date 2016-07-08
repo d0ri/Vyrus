@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Vorspann.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\zellenfressen.cs">
     <Files>
-      <File FileName="Assets\Scripts\Vorspann.cs" Line="33" Column="2" />
       <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Vorspann.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Makrophagenskript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Farbe1aus6.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Schild.cs" Line="1" Column="1" />
@@ -19,7 +19,7 @@
       <File FileName="Assets\Scripts\Einschraenken.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\startscreenscript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Farbe.cs" Line="19" Column="27" />
+      <File FileName="Assets\Scripts\Farbe.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\KameraFolgen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Einschraenken_PS.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Antikoerperkollision.cs" Line="1" Column="1" />
