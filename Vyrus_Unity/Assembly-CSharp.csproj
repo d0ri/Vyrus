@@ -45,37 +45,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Direktauswahl.cs" />
-     <Compile Include="Assets\Scripts\Antikoerperbewegung.cs" />
-     <Compile Include="Assets\Scripts\Antikoerperkollision.cs" />
-     <Compile Include="Assets\Scripts\Einschraenken.cs" />
-     <Compile Include="Assets\Scripts\Einschraenken_PS.cs" />
-     <Compile Include="Assets\Scripts\Farbe.cs" />
-     <Compile Include="Assets\Scripts\Farbe1aus6.cs" />
-     <Compile Include="Assets\Scripts\GameoverTexture.cs" />
-     <Compile Include="Assets\Scripts\Gegnerbewegung.cs" />
-     <Compile Include="Assets\Scripts\Infektion.cs" />
-     <Compile Include="Assets\Scripts\KameraFolgen.cs" />
-     <Compile Include="Assets\Scripts\Lebensanzeige.cs" />
-     <Compile Include="Assets\Scripts\MagnetVirus.cs" />
-     <Compile Include="Assets\Scripts\MagnetZelle.cs" />
-     <Compile Include="Assets\Scripts\Makrophagenskript.cs" />
-     <Compile Include="Assets\Scripts\Schild.cs" />
-     <Compile Include="Assets\Scripts\SchrumpfenueberZeit.cs" />
-     <Compile Include="Assets\Scripts\Schutz.cs" />
-     <Compile Include="Assets\Scripts\SpawnPoint.cs" />
-     <Compile Include="Assets\Scripts\SpawnZellen.cs" />
-     <Compile Include="Assets\Scripts\Spritze.cs" />
-     <Compile Include="Assets\Scripts\Sterben.cs" />
-     <Compile Include="Assets\Scripts\VirusBewegung.cs" />
-     <Compile Include="Assets\Scripts\Vorspann.cs" />
-     <Compile Include="Assets\Scripts\Waypoints.cs" />
-     <Compile Include="Assets\Scripts\Zellen.cs" />
-     <Compile Include="Assets\Scripts\Zellenerstellen.cs" />
-     <Compile Include="Assets\Scripts\menuscript.cs" />
-     <Compile Include="Assets\Scripts\pitch.cs" />
-     <Compile Include="Assets\Scripts\startscreenscript.cs" />
-     <Compile Include="Assets\Scripts\zellenfressen.cs" />
+     <Compile Include="Assets\_Scripts\0_Legacy\Zellenerstellen.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Antikoerperkollision.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Direktauswahl.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Einschraenken_PS.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Farbe.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Infektion.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\MagnetVirus.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Makrophagenskript.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Schild.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\SchrumpfenueberZeit.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\Sterben.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\VirusBewegung.cs" />
+     <Compile Include="Assets\_Scripts\1_Virus\zellenfressen.cs" />
+     <Compile Include="Assets\_Scripts\2_Zellen\Farbe1aus6.cs" />
+     <Compile Include="Assets\_Scripts\2_Zellen\MagnetZelle.cs" />
+     <Compile Include="Assets\_Scripts\2_Zellen\Zellen.cs" />
+     <Compile Include="Assets\_Scripts\3_Gegner\Antikoerperbewegung.cs" />
+     <Compile Include="Assets\_Scripts\3_Gegner\Einschraenken.cs" />
+     <Compile Include="Assets\_Scripts\3_Gegner\Gegnerbewegung.cs" />
+     <Compile Include="Assets\_Scripts\3_Gegner\Waypoints.cs" />
+     <Compile Include="Assets\_Scripts\4_Spawn\SpawnPoint.cs" />
+     <Compile Include="Assets\_Scripts\4_Spawn\SpawnZellen.cs" />
+     <Compile Include="Assets\_Scripts\5_Kamera\KameraFolgen.cs" />
+     <Compile Include="Assets\_Scripts\5_Kamera\Spritze.cs" />
+     <Compile Include="Assets\_Scripts\6_Video&amp;UI\GameoverTexture.cs" />
+     <Compile Include="Assets\_Scripts\6_Video&amp;UI\Lebensanzeige.cs" />
+     <Compile Include="Assets\_Scripts\6_Video&amp;UI\Vorspann.cs" />
+     <Compile Include="Assets\_Scripts\6_Video&amp;UI\menuscript.cs" />
+     <Compile Include="Assets\_Scripts\6_Video&amp;UI\startscreenscript.cs" />
+     <Compile Include="Assets\_Scripts\LevelScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

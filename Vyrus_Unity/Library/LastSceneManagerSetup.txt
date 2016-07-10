@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Level(RICHTIGENLEVELWAEHLEN)/LevelVorspann.unity
+- path: Assets/_Level/0_Master.unity
   isLoaded: 1
   isActive: 1

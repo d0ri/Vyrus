@@ -1,30 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Vorspann.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\LevelScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\Vorspann.cs" Line="33" Column="2" />
-      <File FileName="Assets\Scripts\zellenfressen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Makrophagenskript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Farbe1aus6.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Schild.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Spritze.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MagnetZelle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MagnetVirus.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\menuscript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Infektion.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawnZellen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawnPoint.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Gegnerbewegung.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\VirusBewegung.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Einschraenken.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\startscreenscript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Zellen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Farbe.cs" Line="19" Column="27" />
-      <File FileName="Assets\Scripts\KameraFolgen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Einschraenken_PS.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antikoerperkollision.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antikoerperbewegung.cs" Line="1" Column="1" />
-      <File FileName="Assets\Direktauswahl.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\1_Virus\Sterben.cs" Line="30" Column="68" />
+      <File FileName="Assets\_Scripts\LevelScript.cs" Line="21" Column="38" />
+      <File FileName="Assets\_Scripts\5_Kamera\KameraFolgen.cs" Line="6" Column="17" />
+      <File FileName="Assets\_Scripts\1_Virus\Farbe.cs" Line="22" Column="4" />
+      <File FileName="Assets\_Scripts\1_Virus\zellenfressen.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\1_Virus\Antikoerperkollision.cs" Line="19" Column="4" />
+      <File FileName="Assets\_Scripts\2_Zellen\Farbe1aus6.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\1_Virus\Infektion.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
