@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class LevelScript : MonoBehaviour {
 
 	public GameObject[] Organe;
+	public GameObject Musik;
+	AudioClip Levelwechsel;
 	bool beendet = false;
 	public int LevelInt = 1;
 
@@ -19,6 +21,7 @@ public class LevelScript : MonoBehaviour {
 		if (beendet == true) {
 			Debug.Log("beendet");
 			SceneManager.LoadScene (LevelInt);
+			AudioSource.PlayClipAtPoint (Levelwechsel,transform.position);
 		}
 	}	
 }

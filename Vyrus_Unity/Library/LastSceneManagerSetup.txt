@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Level/2_Jonas.unity
+- path: Assets/_Level/5_SusiA.unity
   isLoaded: 1
   isActive: 1
