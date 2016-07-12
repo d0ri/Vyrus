@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: d2618edbccb3cd2499930c1e1ef371c6
-timeCreated: 1462476650
+timeCreated: 1468339817
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - "Fressger\xE4usch": {fileID: 8300000, guid: bf81b2964396be6439dadbcaa31308a3,
+      type: 3}
+  - score: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
