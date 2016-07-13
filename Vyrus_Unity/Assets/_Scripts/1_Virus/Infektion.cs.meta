@@ -1,10 +1,17 @@
 fileFormatVersion: 2
 guid: 76438b1a5cd17894694418226f31e310
-timeCreated: 1466182252
+timeCreated: 1468435411
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Organ: {instanceID: 0}
+  - Musik: {instanceID: 0}
+  - WaerendDesInfizieren: {fileID: 8300000, guid: 941451849f0b3a646a03a2b7e04bc184,
+      type: 3}
+  - InfizierBAR: {fileID: 8300000, guid: 67f81589f2a9d824a930122c78369bf4, type: 3}
+  - InfNo: {instanceID: 0}
+  - InfYes: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

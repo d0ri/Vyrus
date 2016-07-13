@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;    // Weil Vorspann auf UI gezeigt wird
+using UnityEngine.SceneManagement;// SceneManagement ersetzt Application.LoadLevel
 
 [RequireComponent (typeof(AudioSource))]  //AudioQuelle als Voraussetzung, dass man sie nicht vergisst
 
@@ -22,6 +23,7 @@ public class Vorspann : MonoBehaviour {
 	void Update () {
 
 		if(!movie.isPlaying) Application.LoadLevel("1_Johanna"); //wenn der Vorspann nicht läuft/beendet ist/stoppt, kommt man automatisch zu Level1 
+		//if(!movie.isPlaying) SceneManager.LoadScene(1);   //statt Application.LoadLevel
 
 		if (Input.GetKeyDown (KeyCode.Space) && movie.isPlaying) {  //wenn Leertaste gedrückt wird, wenn Film läuft
 
