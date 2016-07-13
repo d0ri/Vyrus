@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Level/7_LevelVorspann.unity
+- path: Assets/_Level/4_Anuschka.unity
   isLoaded: 1
   isActive: 1
