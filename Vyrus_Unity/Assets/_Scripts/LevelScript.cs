@@ -12,7 +12,7 @@ public class LevelScript : MonoBehaviour {
 
 	void Update () {
 		for (int i = 0; i < Organe.Length; i++) {
-			if (!Organe[i].activeInHierarchy) {
+			if (!Organe[i].activeInHierarchy) {//wenn keines der zu infizierenden Organe (im array) mehr in der hierarchy aktiv ist
 				beendet = true;
 			} else {
 				beendet = false;
