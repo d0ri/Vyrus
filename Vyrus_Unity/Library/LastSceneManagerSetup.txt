@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Level/6_Alex.unity
+- path: Assets/_Level/7_Master.unity
   isLoaded: 1
   isActive: 1

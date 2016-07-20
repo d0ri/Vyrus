@@ -6,7 +6,7 @@ public class Sterben : MonoBehaviour {
 
 	public GameObject TexturePlane; // Plane mit Videotextur "Game Over"
 	public GameObject Musik;
-	AudioClip Sterbesound;
+	public AudioClip Sterbesound;
 	public ParticleSystem partsys;
 
 	void Update () {
@@ -19,8 +19,10 @@ public class Sterben : MonoBehaviour {
 		Musik.SetActive (false);
 		GetComponent<Renderer> ().enabled = false;
 		partsys.gameObject.SetActive (true);
-		transform.GetComponent<AudioSource> ().clip = transform.GetComponent<Infektion> ().sounds [0];//holt den sterbensound vom Infektionsskript
+		transform.GetComponent<AudioSource> ().clip = Sterbesound;
+		if (transform.GetComponent<AudioSource>().isPlaying==false){
 		transform.GetComponent<AudioSource> ().Play ();
+		}
 		yield return new WaitForSeconds(2f);
 		TexturePlane.SetActive (true);
 		//got = TexturePlane.GetComponent<Renderer> ().material.mainTexture;
