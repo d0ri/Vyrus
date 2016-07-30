@@ -6,7 +6,7 @@ public class LevelScript : MonoBehaviour {
 
 	public GameObject[] Organe;
 	public GameObject Musik;
-	AudioClip Levelwechsel;
+	public AudioClip Levelwechsel;
 	bool beendet = false;
 	public int LevelInt = 1;
 
